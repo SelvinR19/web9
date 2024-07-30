@@ -1,0 +1,134 @@
+<!D<!DOCTYPE html>
+<html>
+<head>
+    <P><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Búsqueda</title>
+    <style>
+        /* Estilos para el menú de búsqueda */
+        .search-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .search-menu li {
+            float: left;
+            border-right: 1px solid #ddd;
+        }
+
+        .search-menu li:last-child {
+            border-right: none;
+        }
+
+        .search-menu li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .search-menu li a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+<ul class="search-menu">
+<style>
+        /* Estilos para el menú de búsqueda */
+        .search-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .search-menu li {
+            float: left;
+            border-right: 1px solid #ddd;
+        }
+
+        .search-menu li:last-child {
+            border-right: none;
+        }
+
+        .search-menu li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .search-menu li a:hover {
+            background-color: #ddd;
+        }
+
+    </style>
+            <button onclick="location.href='index.html'">Inicio</button>
+            <button onclick="location.href='Conocenos.html'">Conocenos</button>
+            <button onclick="location.href='Quienes%20Somos.html'">Quienes Somos</button>
+            <button onclick="location.href='Que%20Hacemos.html'">Que Hacemos</button>
+            <button onclick="location.href='Ubicacion.html'">Ubicacion</button>
+            <button onclick="location.href='Redes%20Sociales.html'">Redes Sociales</button>
+            <button onclick="location.href='Opiniones.html'">Opiniones</button>
+            <button onclick="location.href='Horario.html'">Horarios</button>
+
+        </div>
+    </div>
+
+
+</ul>
+</body>
+</P>
+<head>
+  <CENTER>  <H1>MI UBICACION</H1></CENETR>
+    <title>MAPA</title>
+    <!-- Incluye los estilos de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Estilos adicionales para el mapa -->
+    <style>
+        #map { height: 400px; }
+    </style>
+</head>
+<body>
+    <h1>Leaflet Map</h1>
+    <div id="map"></div>
+
+    <!-- Incluye la biblioteca de Leaflet y tu código JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        // Inicializa el mapa
+        var map = L.map('map').setView([51.505, -0.09], 13); // Coordenadas de Londres
+
+        // Añade una capa de mapa base (puedes usar diferentes proveedores de mapas)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Añade un marcador en una ubicación específica
+        L.marker([15.040080, -87.955107]).addTo(map)
+    .bindPopup('¡Hola! Este es tu marcador.')
+    .openPopup();
+
+    </script>
+</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Color de Fondo</title>
+    <style>
+        body {
+            background-color: lightblue; /* Cambia el color aquí */
+        }
+    </style>
+</head>
+</body>
+</html>

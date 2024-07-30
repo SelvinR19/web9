@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <P><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Búsqueda</title>
+    <style>
+        /* Estilos para el menú de búsqueda */
+        .search-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .search-menu li {
+            float: left;
+            border-right: 1px solid #ddd;
+        }
+
+        .search-menu li:last-child {
+            border-right: none;
+        }
+
+        .search-menu li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .search-menu li a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+<ul class="search-menu">
+<style>
+        /* Estilos para el menú de búsqueda */
+        .search-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .search-menu li {
+            float: left;
+            border-right: 1px solid #ddd;
+        }
+
+        .search-menu li:last-child {
+            border-right: none;
+        }
+
+        .search-menu li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .search-menu li a:hover {
+            background-color: #ddd;
+        }
+
+    </style>
+    <div class="buttons">
+             <button onclick="location.href='index.html'">Inicio</button>
+            <button onclick="location.href='Conocenos.html'">Conocenos</button>
+            <button onclick="location.href='Quienes%20Somos.html'">Quienes Somos</button>
+            <button onclick="location.href='Que%20Hacemos.html'">Que Hacemos</button>
+            <button onclick="location.href='Ubicacion.html'">Ubicacion</button>
+            <button onclick="location.href='Redes%20Sociales.html'">Redes Sociales</button>
+            <button onclick="location.href='Opiniones.html'">Opiniones</button>
+            <button onclick="location.href='Horario.html'">Horarios</button>
+
+        </div>
+    </div>
+
+
+</ul>
+</body>
+</P>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociales</title>
+    <style>
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .social-icons img {
+            width: 50px; /* Ajusta el tamaño según tus necesidades */
+            height: auto;
+        }
+    </style>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadro de Opiniones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .opinion-box, .login-box, .submit-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            display: none;
+        }
+
+        .submit-box.active, .login-box.active, .opinion-box.active {
+            display: block;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #opinionsList {
+            margin-top: 20px;
+        }
+
+        .opinion {
+            border-top: 1px solid #ccc;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .opinion h4 {
+            margin: 0;
+        }
+
+        .opinion p {
+            margin: 5px 0 0 0;
+        }
+
+        .delete-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff4d4d;
+            border: none;
+            color: #fff;
+            border-radius: 4px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .delete-btn:hover {
+            background-color: #ff1a1a;
+        }
+    </style>
+</head>
+<body>
+    <div class="submit-box active">
+        <h2>Deja tu Opinión</h2>
+        <form id="opinionForm">
+            <label for="Selvin">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="opinion">Opinión:</label>
+            <textarea id="opinion" name="opinion" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+   <P> <div class="login-box">
+        <h2>Acceso a Opiniones</h2>
+        <form id="loginForm">
+            <label for="ramos2005">Contraseña:</label>
+            <input type="password" id="password" name="password" required></P>
+            
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
+
+    <div class="opinion-box">
+        <h2>Opiniones Recientes</h2>
+        <div id="opinionsList"></div>
+        <button id="closeOpinionsBtn">Cerrar</button>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        const opinionBox = document.querySelector('.opinion-box');
+        const submitBox = document.querySelector('.submit-box');
+        const loginBox = document.querySelector('.login-box');
+        const closeOpinionsBtn = document.getElementById('closeOpinionsBtn');
+
+        const validPassword = 'Ramos2005';
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const loggedIn = sessionStorage.getItem('loggedIn');
+            if (loggedIn === 'true') {
+                loginBox.classList.remove('active');
+                opinionBox.classList.add('active');
+            } else {
+                loginBox.classList.add('active');
+            }
+        });
+
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const password = document.getElementById('password').value;
+            
+            if (password === validPassword) {
+                sessionStorage.setItem('loggedIn', 'true');
+                loginBox.classList.remove('active');
+                opinionBox.classList.add('active');
+            } else {
+                alert('Contraseña incorrecta');
+            }
+        });
+
+        closeOpinionsBtn.addEventListener('click', function() {
+            opinionBox.classList.remove('active');
+            loginBox.classList.add('active');
+            sessionStorage.removeItem('loggedIn');
+        });
+
+        document.getElementById('opinionForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const opinion = document.getElementById('opinion').value;
+            
+            if (name && opinion) {
+                addOpinion(name, opinion);
+                document.getElementById('opinionForm').reset();
+            }
+        });
+
+        function addOpinion(name, opinion) {
+            const opinionBox = document.createElement('div');
+            opinionBox.classList.add('opinion');
+            
+            const opinionName = document.createElement('h4');
+            opinionName.textContent = name;
+            
+            const opinionText = document.createElement('p');
+            opinionText.textContent = opinion;
+
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Eliminar';
+            deleteButton.classList.add('delete-btn');
+            deleteButton.onclick = function() {
+                opinionBox.remove();
+            };
+            
+            opinionBox.appendChild(opinionName);
+            opinionBox.appendChild(opinionText);
+            opinionBox.appendChild(deleteButton);
+            
+            document.getElementById('opinionsList').appendChild(opinionBox);
+        }
+    </script>
+</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Color de Fondo</title>
+    <style>
+        body {
+            background-color: lightblue; /* Cambia el color aquí */
+        }
+    </style>
+</head>
+</html>
